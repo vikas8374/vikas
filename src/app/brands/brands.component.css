@@ -1,0 +1,32 @@
+
+*{
+    margin-right: 0px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float:right;
+    width: 20%;
+    padding:10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  button
+  {
+      background-color:steelblue;
+      border-color: white;
+      color:white;
+  }
+  
+  .column
+  {
+    align-items:flex-end;
+  }
+
+  
