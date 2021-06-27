@@ -22,11 +22,12 @@ const routes: Routes = [
   {path:'info',component:InfoComponent},
   {path:'signin',component:SigninComponent},
   {path:'signup',component:SignupComponent},
+  {path:'',redirectTo:'men',pathMatch:'full'},
   {path:'brands',component:BrandsComponent},
   {path:'categories',component:CategoriesComponent,children:[
-    {path:'topwear',component:TopwearComponent},
-    {path:'bottomwear',component:BottomwearComponent},
-    {path:'footwear',component:FootwearComponent},
+ {path:'topwear',component:TopwearComponent},
+  {path:'bottomwear',component:BottomwearComponent},
+  {path:'footwear',component:FootwearComponent},
   ]},
   {path:'**',component:PagenotfoundComponent}
 ];
